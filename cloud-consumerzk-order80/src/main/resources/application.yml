@@ -1,0 +1,11 @@
+server:
+  port: 80
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: cloud-consumer-order
+  cloud:
+    zookeeper:
+      connect-string: 192.168.117.155:2181 # 虚拟机开启或者云服务器开启Zookeeper服务

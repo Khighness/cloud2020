@@ -1,0 +1,17 @@
+server:
+  port: 8006
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: consul-provider-payment
+  cloud:
+    consul:
+      host: 192.168.117.155
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+        # 开指定启IP地址注册
+        prefer-ip-address: true
+

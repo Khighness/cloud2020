@@ -1,0 +1,65 @@
+server:
+  port: 8001
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud2020?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: KAG1823
+    druid:
+      initial-size: 5
+      max-active: 10
+      min-idle: 5
+      max-wait: 60000
+      time-between-connect-error-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      max-evictable-idle-time-millis: 900000
+      validation-query: SELECT 1 FROM DUAL
+
+eureka:
+  client:
+    # 表示将自己注册进Eureka Server
+    register-with-eureka: true
+    # 表示从Eureka Server抓取已有的注册信息
+    fetch-registry: true
+    service-url:
+      # 单机版
+      # defaultZone: http://eureka7001.com:7001/eureka
+      # 集群版
+      defaultZone: http://eureka7001.com:7001/eureka, http://eureka7002.com:7002/eureka
+      # 表示Eureka Client间隔多久去拉取服务注册信息，单位为秒(默认是30S)
+      # fetch-remote-regions-registry: 30
+  instance:
+    instance-id: payment8001
+    # 访问路径可以显示IP地址
+    prefer-ip-address: true
+    # Eureka Client向Eureka Server发送心跳的时间间隔/频率，单位为秒(默认是30S)
+    # 在这个时间间隔后，Eureka Server没有收到Eureka client的心跳，将剔除服务
+    lease-renewal-interval-in-seconds: 30
+    # Eureka Server在收到最后一次心跳后等待时间上限，单位为秒(默认是90S)
+    # 超时将剔除服务
+    lease-expiration-duration-in-seconds: 90
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: top.parak.springcloud.top.parak.springcloud.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: top.parak.springcloud.top.parak.springcloud.entity
+  global-config:
+    banner: false
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

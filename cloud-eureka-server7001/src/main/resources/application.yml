@@ -1,0 +1,23 @@
+server:
+  port: 7001
+  tomcat:
+    uri-encoding: UTF-8
+
+eureka:
+  instance:
+    # Eureka Server的实例名称
+    hostname: eureka7001.com
+  client:
+    register-with-eureka: false   # false表示不向注册中心注册自己
+    fetch-registry: false        # false表示自己端就是注册中心，职责就是维护服务实例，并不需要去检索服务
+    service-url:
+      # 集群指向其它Eureka Server，相互注册，相互守望
+      # 设置与Eureka Server交互的地址查询和注册服务都需要依赖这个地址
+      # defaultZone: http://eureka7002.com:7002/eureka/
+      # 单机就是自己
+      defaultZone: http://eureka7001.com:7001/eureka/
+  server:
+    # 是否开启自我保护模式(默认为true)
+    enable-self-preservation: true # 关闭自我保护模式，对没有心跳的微服务直接杀无赦，保证不可用服务及时踢除
+    # 清理无效节点的时间间隔(默认是60000ms)
+    eviction-interval-timer-in-ms: 2000
