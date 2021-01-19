@@ -69,7 +69,7 @@ public class PaymentService {
     @HystrixCommand(fallbackMethod = "paymentCircuitBreakerFallBack", commandProperties = {
             @HystrixProperty(name = "circuitBreaker.enabled", value = "true"),                    // 是否开启断路器
             @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),       // 请求次数
-            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"), // 时间窗口期
+            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"), // 时间窗口期0
             @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60")      // 失效率达到多少后跳闸
     })
     public String paymentCircuitBreaker(@PathVariable("id") Integer id) {

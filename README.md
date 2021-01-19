@@ -1,16 +1,4 @@
----
-title: Spring Cloud
-date: 2020-11-25 00:00:00
-categories:
-	Spring Cloud
-tags:
-    [Spring, Java]
----
-
-
-
 # Spring Cloud
-
 
 
 <center>
@@ -80,7 +68,6 @@ Spring Cloud = 分布式微服务架构的一站式解决方案。
 截止 2020-11-25
 
 ```json
-
     "spring-cloud": {
       "Finchley.M2": "Spring Boot >=2.0.0.M3 and <2.0.0.M5",
       "Finchley.M3": "Spring Boot >=2.0.0.M5 and <=2.0.0.M5",
@@ -722,10 +709,68 @@ Hystrix（1.5.18版）足够稳定，可以满足Netflix现有应用程序的需
 
 - 当满足一定的阈值的时候（默认10秒内超过20哥请求次数）
 - 当失败率达到一定的时候（默认10秒内超过50%的请求失败）
+- 到达以上阈值，断路器将会开启
+- 当开启的时候，所有请求都不会进行转发
+- 一段时间之后（默认是5秒），这个时候断路器是半开状态，会让其中一个请求进行转发。如果成功，断路器会关闭，若失败，继续开启。重复4和5。
+
+断路器打开之后：
+
+- 再有请求调用的时候，将不会调用主逻辑，而是直接调用降级fallback，通过断路器，实现了自动地发现错误并将降级逻辑切换为主逻辑，减少响应延迟的效果。
+- 恢复原来的主逻辑：
+  - 对于这一问题，hystrix也为我们实现了自动恢复功能。
+  - 当断路器打开，对主逻辑进行熔断之后，hystrix会启动一个休眠时间窗，在这个时间窗内，降级逻辑是临时的成为主逻辑，当休眠时间窗到期，断路器将进入半开状态，释放一次请求到原来的主逻辑上，如果此次请求正常返回，那么断路器将继续闭合，主逻辑恢复，如果这次请求依然有问题，断路器继续进入打开状态，休眠时间窗重新计时。
 
 
 
-Updating~
+> Dashboard监控
+
+Hystrix提供了准实时的调用监控（Hystrix Dashboard），Hystrix会持续地记录所有通过Hystrix发起的请求的执行信息，并以统计报表和图形的形式展示给用户，包括每秒执行多少请求成功、多少失败等。Netflix通过hystrix-metrics-event-stream项目实现了对以上指标的监控。Spring Cloud夜提供了Hystrix Dashboard的整合，对监控内容转换成可视化界面。
 
 
+
+> POM
+
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+</dependency>
+```
+
+> YML
+
+```yml
+server:
+  port: 9001
+
+spring:
+  application:
+    name: cloud-consumer-hystrix-dashboard
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    # 使用IP注册进Eureka Server
+    prefer-ip-address: true
+```
+
+> Main
+
+```java
+@SpringBootApplication
+@EnableHystrixDashboard
+public class HystrixDashboardMain9001Application {
+    public static void main(String[] args) {
+        SpringApplication.run(HystrixDashboardMain9001Application.class, args);
+    }
+}
+```
+
+输入http://localhost:8001/hystrix.stream即可进行监控：
+
+![image-20210119232242203](SpringCloud/image-20210119232242203.png)
 
