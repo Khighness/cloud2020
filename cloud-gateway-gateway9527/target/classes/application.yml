@@ -1,0 +1,41 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      # 开启从注册中心动态创建路由的功能，利用微服务名进行路由
+      discovery:
+        locator:
+          enabled: true
+
+      routes:
+        # 路由ID，没有规则但要求唯一
+        - id: payment_routh
+          # 匹配后提供服务的路由地址
+          # uri: http://localhost:8001
+          uri: lb://cloud-payment-service
+          # 断言，路径相匹配的进行路由
+          predicates:
+            - Path=/payment/get/**
+
+        - id: payment_routh2
+          # uri: http://localhost:8001
+          uri: lb://cloud-payment-service
+          predicates:
+            - Path=/payment/lb/**
+#            - After=2021-01-23T10:52:52.886+08:00[Asia/Shanghai]
+#            - Cookie=username,khighness
+#            - Header=X-Request-Id,\d+
+#            - Header=Host,www.parak.top
+
+eureka:
+  instance:
+    hostname: cloud-gateway-service
+  client:
+    service-url:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://eureka7001.com:7001/eureka

@@ -14,4 +14,3 @@ eureka:
   instance:
     # 使用IP注册进Eureka Server
     prefer-ip-address: true
-
