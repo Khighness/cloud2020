@@ -26,6 +26,7 @@ spring:
           uri: lb://cloud-payment-service
           predicates:
             - Path=/payment/lb/**
+#            - Before=2021-01-30T10:52:52.886+08:00[Asia/Shanghai]
 #            - After=2021-01-23T10:52:52.886+08:00[Asia/Shanghai]
 #            - Cookie=username,khighness
 #            - Header=X-Request-Id,\d+

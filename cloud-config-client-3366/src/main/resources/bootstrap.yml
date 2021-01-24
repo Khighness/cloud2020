@@ -1,0 +1,40 @@
+server:
+  port: 3366
+
+spring:
+  application:
+    name: cloud-config-client
+  cloud:
+    # Config客户端配置
+    config:
+      # 分支名称
+      label: master
+      # 配置文件名称
+      name: config
+      # 后缀名称
+      profile: dev
+      # 配置中心地址
+      uri: http://localhost:3344
+  rabbitmq:
+    host: 192.168.117.155
+    port: 5672
+    username: Khighness
+    password: KAG1823
+    virtual-host: parak
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    # 使用IP注册进Eureka Server
+    prefer-ip-address: true
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

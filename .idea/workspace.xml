@@ -20,7 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2140253-8783-432f-b51f-9eecec74be18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-hystrix-dashboard9001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-hystrix-dashboard9001/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-config-center-3344/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-config-center-3344/src/main/java/top/parak/springcloud/ConfigCenterMain3344Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-config-center-3344/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-config-center-3344/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-config-center-3344/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-config-center-3344/target/classes/top/parak/springcloud/ConfigCenterMain3344Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway-gateway9527/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway-gateway9527/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +73,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-gateway-gateway9527/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-config-client-3366/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -80,15 +86,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.parak.springcloud.controller" />
       <recent name="top.parak.springcloud.config" />
       <recent name="springcloud" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\cloud2020\cloud-config-client-3366\src\main\resources" />
+      <recent name="D:\Java\cloud2020\cloud-config-client-3355\src\main\resources" />
+      <recent name="D:\Java\cloud2020\cloud-config-center-3344\src\main\resources" />
       <recent name="D:\Java\cloud2020\cloud-gateway-gateway9527\src\main\resources" />
       <recent name="D:\Java\cloud2020\SpringCloud" />
-      <recent name="D:\Java\cloud2020\cloud-consumer-hystrix-dashboard9001\src\main\resources" />
-      <recent name="D:\Java\cloud2020\cloud-consumer-feign-hystrix-order80\src\main\resources" />
-      <recent name="D:\Java\cloud2020\cloud-provider-hystrix-payment8001\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -99,13 +106,46 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayMain9527Application">
+  <component name="RunManager" selected="Spring Boot.ConfigCenterMain3344Application">
     <configuration name="TimeTest.getTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cloud-gateway-gateway9527" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TimeTest" />
       <option name="METHOD_NAME" value="getTime" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigCenterMain3344Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-config-center-3344" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.parak.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.ConfigCenterMain3344Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigClientMain3355Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-config-client-3355" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.parak.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.ConfigClientMain3355Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigClientMain3366Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-config-client-3366" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.ConfigClientMain3366Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,14 +177,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HystrixDashboardMain9001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="HystrixDashboardMain9001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumer-hystrix-dashboard9001" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.parak.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.HystrixDashboardMain9001Application" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,6 +187,13 @@
     <configuration name="OrderConsulMain80Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumerconsul-order80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.OrderConsulMain80Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderHystrixMain80Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-consumer-feign-hystrix-order80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.OrderHystrixMain80Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,14 +219,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentHystrixMain8001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="PaymentHystrixMain8001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-provider-hystrix-payment8001" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.parakspringcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parakspringcloud.PaymentHystrixMain8001Application" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -227,6 +262,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.TimeTest.getTime" />
       <item itemvalue="Spring Boot.PaymentMain8004Application" />
       <item itemvalue="Spring Boot.PaymentMain8002Application" />
       <item itemvalue="Spring Boot.EurekaMain7002Application" />
@@ -236,19 +272,22 @@
       <item itemvalue="Spring Boot.OrderMain80Application" />
       <item itemvalue="Spring Boot.OrderOpenfeignMain80Application" />
       <item itemvalue="Spring Boot.GatewayMain9527Application" />
+      <item itemvalue="Spring Boot.OrderHystrixMain80Application" />
+      <item itemvalue="Spring Boot.HystrixDashboardMain9001Application" />
+      <item itemvalue="Spring Boot.PaymentHystrixMain8001Application" />
       <item itemvalue="Spring Boot.EurekaMain7001Application" />
       <item itemvalue="Spring Boot.PaymentMain8001Application" />
-      <item itemvalue="Spring Boot.PaymentHystrixMain8001Application" />
-      <item itemvalue="Spring Boot.HystrixDashboardMain9001Application" />
-      <item itemvalue="JUnit.TimeTest.getTime" />
+      <item itemvalue="Spring Boot.ConfigCenterMain3344Application" />
+      <item itemvalue="Spring Boot.ConfigClientMain3355Application" />
+      <item itemvalue="Spring Boot.ConfigClientMain3366Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ConfigClientMain3355Application" />
+        <item itemvalue="Spring Boot.ConfigCenterMain3344Application" />
         <item itemvalue="Spring Boot.PaymentMain8001Application" />
         <item itemvalue="Spring Boot.EurekaMain7001Application" />
         <item itemvalue="JUnit.TimeTest.getTime" />
-        <item itemvalue="Spring Boot.PaymentHystrixMain8001Application" />
-        <item itemvalue="Spring Boot.HystrixDashboardMain9001Application" />
       </list>
     </recent_temporary>
   </component>
@@ -311,7 +350,9 @@
       <workItem from="1611054733572" duration="9431000" />
       <workItem from="1611106446567" duration="3109000" />
       <workItem from="1611224690668" duration="4781000" />
-      <workItem from="1611364493582" duration="9506000" />
+      <workItem from="1611364493582" duration="18278000" />
+      <workItem from="1611465646292" duration="164000" />
+      <workItem from="1611465815287" duration="6876000" />
     </task>
     <servers />
   </component>
@@ -375,10 +416,11 @@
     </state>
     <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608294929047" />
     <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1611396378044" />
-    <state x="577" y="168" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1608878432343">
+    <state x="577" y="168" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1611406771317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="168" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608878432343" />
+    <state x="577" y="168" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611406771317" />
     <state x="586" y="435" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1608294975708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -389,46 +431,46 @@
     <state x="-1290" y="235" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608292054327" />
     <state x="630" y="235" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608999627135" />
     <state x="630" y="235" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608474291900" />
-    <state width="759" height="279" key="GridCell.Tab.0.bottom" timestamp="1611397116445">
+    <state width="700" height="645" key="GridCell.Tab.0.bottom" timestamp="1611473093886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="759" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611397116445" />
-    <state width="759" height="279" key="GridCell.Tab.0.center" timestamp="1611397116445">
+    <state width="700" height="645" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611473093886" />
+    <state width="700" height="645" key="GridCell.Tab.0.center" timestamp="1611473093885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="759" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611397116445" />
-    <state width="759" height="279" key="GridCell.Tab.0.left" timestamp="1611397116445">
+    <state width="700" height="645" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611473093885" />
+    <state width="700" height="645" key="GridCell.Tab.0.left" timestamp="1611473093885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="759" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611397116445" />
-    <state width="759" height="279" key="GridCell.Tab.0.right" timestamp="1611397116445">
+    <state width="700" height="645" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611473093885" />
+    <state width="700" height="645" key="GridCell.Tab.0.right" timestamp="1611473093886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="759" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611397116445" />
-    <state width="759" height="279" key="GridCell.Tab.1.bottom" timestamp="1611397116445">
+    <state width="700" height="645" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611473093886" />
+    <state width="700" height="645" key="GridCell.Tab.1.bottom" timestamp="1611473093886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="759" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611397116445" />
-    <state width="759" height="279" key="GridCell.Tab.1.center" timestamp="1611397116445">
+    <state width="700" height="645" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611473093886" />
+    <state width="700" height="645" key="GridCell.Tab.1.center" timestamp="1611473093886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="759" height="279" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611397116445" />
-    <state width="759" height="279" key="GridCell.Tab.1.left" timestamp="1611397116445">
+    <state width="700" height="645" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611473093886" />
+    <state width="700" height="645" key="GridCell.Tab.1.left" timestamp="1611473093886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="759" height="279" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611397116445" />
-    <state width="759" height="279" key="GridCell.Tab.1.right" timestamp="1611397116445">
+    <state width="700" height="645" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611473093886" />
+    <state width="700" height="645" key="GridCell.Tab.1.right" timestamp="1611473093886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="759" height="279" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611397116445" />
+    <state width="700" height="645" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611473093886" />
     <state width="1428" height="459" key="GridCell.Tab.2.bottom" timestamp="1608310141139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -467,11 +509,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="174" key="editAsTableFormatDialogDimension/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608081885692" />
-    <state x="973" y="168" width="754" height="589" key="new project wizard" timestamp="1611328259283">
+    <state x="973" y="168" width="754" height="589" key="new project wizard" timestamp="1611465668969">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="293" y="198" width="857" height="590" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608999639842" />
-    <state x="973" y="168" width="754" height="589" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1611328259283" />
+    <state x="973" y="168" width="754" height="589" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1611465668969" />
     <state x="724" y="387" width="564" height="284" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1607611941998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

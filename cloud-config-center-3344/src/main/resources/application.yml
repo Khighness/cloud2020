@@ -1,0 +1,39 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Khighness/cloud2020-config.git
+          # 搜索目录
+          search-paths:
+            - cloud2020-config
+      # 读取分支
+      label: master
+  rabbitmq:
+    host: 192.168.117.155
+    port: 5672
+    username: Khighness
+    password: KAG1823
+    virtual-host: parak
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    # 使用IP注册进Eureka Server
+    prefer-ip-address: true
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
