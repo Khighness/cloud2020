@@ -3,7 +3,7 @@
 /target/
 
 
-### STS ###
+### STS
 
 .apt_generated
 .classpath
@@ -21,7 +21,7 @@
 *.iml
 *.ipr
 
-### NetBeans 
+### NetBeans
 
 /nbproject/private/
 /build/

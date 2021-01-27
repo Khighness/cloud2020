@@ -1,0 +1,58 @@
+server:
+  port: 8801
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: cloud-stream-provider
+  # 连接rabbitmq防止健康检查报错
+  rabbitmq:
+    host: 192.168.117.155
+    port: 5672
+    username: Khighness
+    password: KAG1823
+    virtual-host: /
+  cloud:
+    stream:
+      # 配置要绑定的rabbitmq的消息服务
+      binders:
+        # 表示定义的名称，用于binding集合
+        defaultRabbit:
+          # 消息组件来写
+          type: rabbit
+          # 设置rabbitmq的相关环境配置
+          environment:
+            spring:
+              rabbitmq:
+                host: 192.168.117.155
+                port: 5672
+                username: Khighness
+                password: KAG1823
+                virtual-host: /
+      # 服务的整合处理
+      bindings:
+        # 通道名称
+        output:
+          # 表示要使用的exchange名称定义
+          destination: studyExchange
+          # 设置消息类型(json)，文本则为text/plain
+          content-type: application/json
+          # 设置要绑定的消息服务的具体设置
+          binder: defaultRabbit
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    # 设置心跳的时间间隔(默认是30秒)
+    lease-renewal-interval-in-seconds: 2
+    # 如果现在超过了5秒的时间间隔(默认是30秒)
+    lease-expiration-duration-in-seconds: 5
+    # 在信息列表显示主机名称
+    instance-id: receive-8802.com
+    # 访问的路径变为IP地址
+    prefer-ip-address: true

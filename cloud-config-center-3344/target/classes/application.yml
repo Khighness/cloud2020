@@ -19,7 +19,7 @@ spring:
     port: 5672
     username: Khighness
     password: KAG1823
-    virtual-host: parak
+    virtual-host: /
 
 eureka:
   client:
