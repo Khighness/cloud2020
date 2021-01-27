@@ -64,14 +64,14 @@ public class OrderController {
         ResponseEntity<CommonResult> entity = restTemplate.getForEntity(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
         if (entity.getStatusCode().is2xxSuccessful()) {
             log.info("Http Status Code => [{}]", entity.getStatusCodeValue());
-            log.info("Handlle message => [{}]", entity.getBody().getMessage());
+            log.info("Handle message => [{}]", entity.getBody().getMessage());
             return entity.getBody();
         } else {
             return new CommonResult<>(444, "操作失败");
         }
     }
 
-    @GetMapping(value = "/payment/lb")
+    @GetMapping(value = "/lb")
     public String getPaymentLB(HttpServletRequest request, HttpServletResponse response) {
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
         if (instances == null || instances.size() <= 0) {
@@ -80,6 +80,12 @@ public class OrderController {
         ServiceInstance serviceInstance = loadBalancer.instances(instances);
         URI uri = serviceInstance.getUri();
         return restTemplate.getForObject(uri + "/payment/lb", String.class);
+    }
+
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin() {
+        String result = restTemplate.getForObject("http://localhost:8001" + "/payment/zipkin/", String.class);
+        return result;
     }
 
 }
