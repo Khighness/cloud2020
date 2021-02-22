@@ -15,7 +15,7 @@
 
 ### IntelliJ IDEA
 
-.idea
+.idea/
 .out
 *.iws
 *.iml

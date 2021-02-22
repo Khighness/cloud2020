@@ -13,12 +13,6 @@ tags:
 
 
 
-<center>
-    <font face="Kristen ITC" color="#555555" size=3>💤 Khighness 💤</font><br>
-</center>
-
-
-
 ![java](https://img.shields.io/badge/java-8-brightgreen)![maven](https://img.shields.io/badge/maven-3.6.3-brightgreen)![mysql](https://img.shields.io/badge/mysql-8.0.20-brightgreen)![spring boot](https://img.shields.io/badge/spring%20boot-2.2.2-brightgreen)![spring cloud](https://img.shields.io/badge/spring%20cloud-Hoxton.SR1-brightgreen)![spring cloud alibaba](https://img.shields.io/badge/spring%20cloud%20alibaba-2.1.0-brightgreen)![fastjson](https://img.shields.io/badge/fastjson-1.2.3-brightgreen)
 
 
