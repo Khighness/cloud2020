@@ -31,6 +31,9 @@ feign:
   hystrix:
     enabled: false
 
+ribbon:
+  c
+
 logging:
   level:
     io:

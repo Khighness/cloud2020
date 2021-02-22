@@ -1,5 +1,6 @@
 package top.parak.springcloud.service.impl;
 
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import top.parak.springcloud.domain.Order;
@@ -36,9 +37,12 @@ public class OrderServiceImpl implements OrderService {
 
     /**
      * 业务流程：下订单 -> 减库存 -> 减余额 -> 改状态
+     * {@code GlobalTransactional}开启分布式事务
+     * 异常时进行回滚，name保证唯一性即可
      * @param order
      */
     @Override
+    @GlobalTransactional(name = "khighness-create-order", rollbackFor = Exception.class)
     public void createOrder(Order order) {
         // (1)
         log.info(">>> 新建订单 <<<");

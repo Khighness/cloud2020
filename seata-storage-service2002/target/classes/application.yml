@@ -1,5 +1,5 @@
 server:
-  port: 2001
+  port: 2002
 
 spring:
   application:
@@ -14,7 +14,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.117.155:3306/seata_order?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://192.168.117.155:3306/seata_storage?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull
     username: root
     password: KAG1823
     druid:

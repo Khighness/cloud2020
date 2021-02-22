@@ -1,5 +1,6 @@
 package top.parak.springcloud.controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import top.parak.springcloud.domain.CommonResult;
@@ -25,7 +26,7 @@ public class StorageController {
     @Resource
     private StorageService storageService;
 
-    @RequestMapping("/decrease")
+    @PostMapping("/decrease")
     public CommonResult decrease(Long productId, Integer count) {
         storageService.decrease(productId, count);
         return new CommonResult(200, "扣减库存数量成功");
