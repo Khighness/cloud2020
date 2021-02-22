@@ -1,0 +1,27 @@
+server:
+  port: 84
+
+spring:
+  application:
+    name: nacos-order-consumer
+  cloud:
+    nacos:
+      discovery:
+        # 服Nacos服务注册中心地址
+        server-addr: 192.168.117.155:8848
+    sentinel:
+      transport:
+        # 配置Sentinel Dashboard地址
+        dashboard: 192.168.117.155:8858
+        # 默认端口
+        port: 8719
+
+# 消费者将去访问的微服务名称
+server-url:
+  nacos-user-service: http://nacos-payment-provider
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

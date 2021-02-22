@@ -20,18 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2140253-8783-432f-b51f-9eecec74be18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/top/parak/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/top/parak/springcloud/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/top/parak/springcloud/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/top/parak/springcloud/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-eureka-server7001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka-server7001/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/top/parak/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/top/parak/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/top/parak/springcloud/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/top/parak/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/top/parak/springcloud/config/ApplicationContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/top/parak/springcloud/config/ApplicationContextConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/top/parakspringcloud/PaymentHystrixMain8001Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/top/parak/springcloud/PaymentHystrixMain8001Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/top/parakspringcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/top/parak/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/top/parakspringcloud/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/top/parak/springcloud/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/target/classes/top/parakspringcloud/PaymentHystrixMain8001Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/target/classes/top/parakspringcloud/controller/PaymentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/target/classes/top/parakspringcloud/service/PaymentService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/top/parak/springcloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/top/parak/springcloud/controller/PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,29 +78,33 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/seata-account-service2003/src/main/java/top/parak/springcloud" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.35287356" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.1724138" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\cloud2020\seata-account-service2003\src\main\java\top\parak\springcloud" />
+      <recent name="D:\Java\cloud2020\seata-account-service2003\src\main\resources" />
+      <recent name="D:\Java\cloud2020\seata-storage-service2002\src\main\resources" />
+      <recent name="D:\Java\cloud2020\seata-storage-service2002\src\main\java\top\parak\springcloud" />
+      <recent name="D:\Java\cloud2020\seata-order-service2001\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.parak.springcloud.domain" />
       <recent name="top.parak.springcloud.controller" />
       <recent name="top.parak.springcloud.config" />
       <recent name="springcloud" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\cloud2020\cloud-stream-rabbitmq-consumer8803\src\main\java" />
-      <recent name="D:\Java\cloud2020\cloud-stream-rabbitmq-consumer8803\src\main\resources" />
-      <recent name="D:\Java\cloud2020\cloud-stream-rabbitmq-consumer8802\src\main\resources" />
-      <recent name="D:\Java\cloud2020\cloud-stream-rabbitmq-provider8801\src\main\resources" />
-      <recent name="D:\Java\cloud2020\cloud-config-client-3366\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\cloud2020\cloudalibaba-provider-payment9003\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,28 +115,24 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PaymentMain8002Application">
-    <configuration name="ConfigCenterMain3344Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in cloud2020">
+    <configuration name="All in cloud2020" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud2020" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigCenterMain3344Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-center-3344" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.parak.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.ConfigCenterMain3344Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigClientMain3355Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigClientMain3355Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-client-3355" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.parak.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.ConfigClientMain3355Application" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,14 +145,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaMain7001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="EurekaMain7001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-eureka-server7001" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.parak.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.EurekaMain7001Application" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,6 +173,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NacosConfigClientMain3377Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloudalibaba-config-nacos-client3377" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.NacosConfigClientMain3377Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderConsulMain80Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumerconsul-order80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.OrderConsulMain80Application" />
@@ -199,6 +201,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderMain84Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-consumer-nacos-order84" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.parak.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.OrderMain84Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderNacosMain83Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloudalibaba-consumer-nacos-order83" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.OrderNacosMain83Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderOpenfeignMain80Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumer-feign-order80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.OrderOpenfeignMain80Application" />
@@ -209,6 +231,13 @@
     <configuration name="OrderZKMain80Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumerzk-order80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.OrderZKMain80Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentHystrixMain8001Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-provider-hystrix-payment8001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.PaymentHystrixMain8001Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -248,6 +277,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentMain9001Appliation" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloudalibaba-provider-payment9001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.PaymentMain9001Appliation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentMain9002Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloudalibaba-provider-payment9002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.PaymentMain9002Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentMain9003Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-provider-payment9003" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.parak.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.PaymentMain9003Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentMain9004Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-provider-payment9004" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.parak.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.PaymentMain9004Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataAccountMain2003Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="seata-account-service2003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.SeataAccountMain2003Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataOrderMain2001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-order-service2001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.parak.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.SeataOrderMain2001Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataStorageMain2002Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="seata-storage-service2002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.SeataStorageMain2002Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StreamRabbitMQMain8801Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-stream-rabbitmq-provider8801" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.StreamRabbitMQMain8801Application" />
@@ -255,27 +351,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamRabbitMQMain8802Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="StreamRabbitMQMain8802Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-stream-rabbitmq-consumer8802" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.parak.springcloud.StreamRabbitMQMain8802Application" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.StreamRabbitMQMain8802Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamRabbitMQMain8803Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="StreamRabbitMQMain8803Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-stream-rabbitmq-consumer8803" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.parak.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.parak.springcloud.StreamRabbitMQMain8803Application" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -297,19 +381,31 @@
       <item itemvalue="Spring Boot.PaymentHystrixMain8001Application" />
       <item itemvalue="Spring Boot.ConfigClientMain3366Application" />
       <item itemvalue="Spring Boot.PaymentMain8001Application" />
-      <item itemvalue="Spring Boot.EurekaMain7001Application" />
       <item itemvalue="Spring Boot.ConfigCenterMain3344Application" />
       <item itemvalue="Spring Boot.ConfigClientMain3355Application" />
       <item itemvalue="Spring Boot.StreamRabbitMQMain8802Application" />
       <item itemvalue="Spring Boot.StreamRabbitMQMain8803Application" />
+      <item itemvalue="Spring Boot.PaymentMain9001Appliation" />
+      <item itemvalue="Spring Boot.OrderNacosMain83Application" />
+      <item itemvalue="Spring Boot.PaymentMain9002Application" />
+      <item itemvalue="Spring Boot.PaymentMain9003Application" />
+      <item itemvalue="Spring Boot.PaymentMain9004Application" />
+      <item itemvalue="Spring Boot.OrderMain84Application" />
+      <item itemvalue="Spring Boot.EurekaMain7001Application" />
+      <item itemvalue="Spring Boot.SeataOrderMain2001Application" />
+      <item itemvalue="Spring Boot.PaymentHystrixMain8001Application (1)" />
+      <item itemvalue="Spring Boot.NacosConfigClientMain3377Application" />
+      <item itemvalue="Spring Boot.SeataAccountMain2003Application" />
+      <item itemvalue="Spring Boot.SeataStorageMain2002Application" />
+      <item itemvalue="JUnit.All in cloud2020" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EurekaMain7001Application" />
-        <item itemvalue="Spring Boot.StreamRabbitMQMain8803Application" />
-        <item itemvalue="Spring Boot.StreamRabbitMQMain8802Application" />
-        <item itemvalue="Spring Boot.ConfigClientMain3355Application" />
-        <item itemvalue="Spring Boot.ConfigCenterMain3344Application" />
+        <item itemvalue="JUnit.All in cloud2020" />
+        <item itemvalue="Spring Boot.SeataOrderMain2001Application" />
+        <item itemvalue="Spring Boot.OrderMain84Application" />
+        <item itemvalue="Spring Boot.PaymentMain9004Application" />
+        <item itemvalue="Spring Boot.PaymentMain9003Application" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +473,10 @@
       <workItem from="1611465815287" duration="11801000" />
       <workItem from="1611631918998" duration="18180000" />
       <workItem from="1611726921104" duration="9256000" />
-      <workItem from="1611744556204" duration="1711000" />
+      <workItem from="1611744556204" duration="7922000" />
+      <workItem from="1611802031742" duration="13439000" />
+      <workItem from="1613711318352" duration="30534000" />
+      <workItem from="1613873101520" duration="31920000" />
     </task>
     <servers />
   </component>
@@ -422,25 +521,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="795" y="434" key="#Path_mapping/0.0.1920.1040@0.0.1920.1040" timestamp="1607792443272" />
-    <state x="440" y="94" key="#Project_Structure" timestamp="1611745180948">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1613912288379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608878484033" />
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1611745180948" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1613912288379" />
     <state x="752" y="378" key="#Scopes" timestamp="1608046450067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="378" key="#Scopes/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608046450067" />
-    <state x="244" y="128" width="1161" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608267872832">
+    <state x="215" y="162" width="1161" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613799523500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="244" y="128" width="1161" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608267872832" />
-    <state x="293" y="312" width="1372" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606453562672" />
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1611633746204">
+    <state x="215" y="162" width="1372" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613799523500" />
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1613965948541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608294929047" />
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1611633746204" />
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1613965948541" />
     <state x="577" y="168" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1611406771317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -456,46 +555,46 @@
     <state x="-1290" y="235" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608292054327" />
     <state x="630" y="235" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608999627135" />
     <state x="630" y="235" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608474291900" />
-    <state width="1509" height="731" key="GridCell.Tab.0.bottom" timestamp="1611745641871">
+    <state width="1633" height="184" key="GridCell.Tab.0.bottom" timestamp="1613968121126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="1509" height="731" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611745641871" />
-    <state width="1509" height="731" key="GridCell.Tab.0.center" timestamp="1611745641870">
+    <state width="1633" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613968121126" />
+    <state width="1633" height="184" key="GridCell.Tab.0.center" timestamp="1613968121125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="1509" height="731" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611745641870" />
-    <state width="1509" height="731" key="GridCell.Tab.0.left" timestamp="1611745641870">
+    <state width="1633" height="184" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613968121125" />
+    <state width="1633" height="184" key="GridCell.Tab.0.left" timestamp="1613968121125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="1509" height="731" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611745641870" />
-    <state width="1509" height="731" key="GridCell.Tab.0.right" timestamp="1611745641870">
+    <state width="1633" height="184" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613968121125" />
+    <state width="1633" height="184" key="GridCell.Tab.0.right" timestamp="1613968121126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="1509" height="731" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611745641870" />
-    <state width="1509" height="731" key="GridCell.Tab.1.bottom" timestamp="1611745641871">
+    <state width="1633" height="184" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613968121126" />
+    <state width="1633" height="184" key="GridCell.Tab.1.bottom" timestamp="1613968121126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="1509" height="731" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611745641871" />
-    <state width="1509" height="731" key="GridCell.Tab.1.center" timestamp="1611745641871">
+    <state width="1633" height="184" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613968121126" />
+    <state width="1633" height="184" key="GridCell.Tab.1.center" timestamp="1613968121126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="1509" height="731" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611745641871" />
-    <state width="1509" height="731" key="GridCell.Tab.1.left" timestamp="1611745641871">
+    <state width="1633" height="184" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613968121126" />
+    <state width="1633" height="184" key="GridCell.Tab.1.left" timestamp="1613968121126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="1509" height="731" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611745641871" />
-    <state width="1509" height="731" key="GridCell.Tab.1.right" timestamp="1611745641871">
+    <state width="1633" height="184" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613968121126" />
+    <state width="1633" height="184" key="GridCell.Tab.1.right" timestamp="1613968121126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1522" height="202" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609077477166" />
-    <state width="1509" height="731" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611745641871" />
+    <state width="1633" height="184" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613968121126" />
     <state width="587" height="503" key="GridCell.Tab.2.bottom" timestamp="1611727845044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -524,25 +623,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1011" y="320" width="858" height="569" key="Registry/0.0.1920.1040@0.0.1920.1040" timestamp="1606386253681" />
-    <state x="281" y="177" width="1112" height="790" key="SettingsEditor" timestamp="1611066601536">
+    <state x="594" y="146" width="1112" height="790" key="SettingsEditor" timestamp="1613719892474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1505" y="210" width="974" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1607767404652" />
     <state x="261" y="139" width="1112" height="790" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608878510063" />
-    <state x="281" y="177" width="974" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611066601536" />
+    <state x="594" y="146" width="974" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1613719892474" />
     <state x="868" y="196" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611744930441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="868" y="196" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1611744930441" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1613877288302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1613877288302" />
+    <state x="584" y="0" width="822" height="1030" key="dock-window-2" timestamp="1613956614421">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="584" y="0" width="822" height="1030" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1613956614421" />
     <state x="540" y="174" key="editAsTableFormatDialogDimension" timestamp="1608081885692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="174" key="editAsTableFormatDialogDimension/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608081885692" />
-    <state x="188" y="220" width="754" height="589" key="new project wizard" timestamp="1611667461444">
+    <state x="1056" y="202" width="754" height="589" key="new project wizard" timestamp="1613911329009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="293" y="198" width="857" height="590" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608999639842" />
-    <state x="188" y="220" width="754" height="589" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1611667461444" />
+    <state x="1056" y="202" width="754" height="589" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1613911329009" />
     <state x="724" y="387" width="564" height="284" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1607611941998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -552,10 +659,13 @@
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608878494225" />
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611365453524" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611391592101">
+    <state x="925" y="228" width="672" height="678" key="search.everywhere.popup" timestamp="1613963301058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="160" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609075488402" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611391592101" />
+    <state x="925" y="228" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613963301058" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cloud2020$All_in_cloud2020.ic" NAME="All in cloud2020 Coverage Results" MODIFIED="1613968541647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
