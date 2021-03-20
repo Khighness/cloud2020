@@ -12,7 +12,7 @@
 
 ![Spring Cloud](https://shields.io/badge/spring%20cloud-Hoxton.SR1-lightgreen?logo=spring&style=for-the-badge)
 
-![Spring Cloud Alibaba](https://shields.io/badge/spring%20cloud%20alibaba-2.1.0-orange?logo=alibaba%20cloud&style=for-the-badge)
+![Spring Cloud Alibaba](https://shields.io/badge/spring%20cloud%20alibaba-2.1.0.RELEASE-orange?logo=alibaba%20cloud&style=for-the-badge)
 
 
 
