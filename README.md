@@ -573,7 +573,7 @@ Feign集成了Ribbon。
 |                            Feign                             |                          OpenFeign                           |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | Feign是SpringCloud组件中的一个轻量级RESTful的HTTP服务客户端。Feign内置了Ribbon，用来做客户端负载均衡，去调用服务注册中心的服务。Feign的使用方法：使用Feign的注解定义接口，调用这个接口，就可以调用服务注册中心的服务。 | OpenFeign是Spring Cloud在Feign的基础上支持了SpringMVC的注解，如@RequestMapping等等。OpenFeign的@FeignClient可以解析SpringMVC的@RequestMapping注解下的接口，并通过动态代理的方式产生实现类，实现类中做负载均衡并调用其他服务。 |
-| <dependency>     <groupId>org.springframework.cloud</groupId>     <artifactId>spring-cloud-starter-feign</artifactId> </dependency> | <dependency>     <groupId>org.springframework.cloud</groupId>     <artifactId>spring-cloud-starter-openfeign</artifactId> </dependency> |
+|                  spring-cloud-starter-feign                  |                spring-cloud-starter-openfeign                |
 
 
 
@@ -696,7 +696,7 @@ Hystrix（1.5.18版）足够稳定，可以满足Netflix现有应用程序的需
 
 开启或者关闭的条件：
 
-- 当满足一定的阈值的时候（默认10秒内超过20哥请求次数）
+- 当满足一定的阈值的时候（默认10秒内超过20的请求次数）
 - 当失败率达到一定的时候（默认10秒内超过50%的请求失败）
 - 到达以上阈值，断路器将会开启
 - 当开启的时候，所有请求都不会进行转发
@@ -1042,7 +1042,7 @@ Spring Cloud Netflix项目进入维护模式
 
 ```shell
 # 下载镜像
-docker pull nacos/nacos-server:1.1.4 
+docker pull nacos/nacos-server:1.3.1
 
 # 创建配置文件和日志文件目录
 mkdir -p /opt/nacos/single/init.d /opt/nacos/single/logs 
@@ -1058,7 +1058,7 @@ docker run -d -p 8848:8848 -e MODE=standalone \
 -v /opt/nacos/single/init.d/custom.properties:/home/nacos/init.d/custom.properties \
 -v /opt/nacos/single/logs:/home/nacos/logs \
 --restart always \
---name nacos nacos/nacos-server:1.1.4 
+--name nacos nacos/nacos-server:1.3.1
 ```
 
 
@@ -1232,8 +1232,6 @@ nacos/nacos-server:1.3.1
 
 
 
-
-
 ### 🛡️ Sentinel
 
 
@@ -1273,7 +1271,7 @@ docker run --name sentinel -d -p 8858:8858 -d bladex/sentinel-dashboard
 - 资源名：唯一路径，默认请求路径
 - 针对来源：Sentinel可以针对调用者进行限流，填写微服务名，默认default
 - 阈值类型/单机阈值：
-  - QPS（每秒钟的请求数量）：当乔勇该API的QPS达到阈值的时候，进行限流
+  - QPS（每秒钟的请求数量）：当调用该API的QPS达到阈值的时候，进行限流
   - 线程数：当调用该API的线程数达到阈值的时候，进行限流
 
 2️⃣流控模式
@@ -1441,5 +1439,4 @@ $ docker run -d \
 -e SEATA_PORT=8091 \
 seataio/seata-server:1.4.0
 ```
-
 
