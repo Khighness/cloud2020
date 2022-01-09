@@ -2,18 +2,19 @@
 
 
 
-![Java](https://shields.io/badge/java-8-lightgrey?logo=java&style=for-the-badge)
+<p align="center">
+<img src="https://shields.io/badge/java-8-lightgrey?logo=java&style=for-the-badge" alt="Java">
+<img src="https://shields.io/badge/maven-3.6.3-yellow?logo=apache%20maven&style=for-the-badge" alt="Maven">
+</p>
 
-![Maven](https://shields.io/badge/maven-3.6.3-yellow?logo=apache%20maven&style=for-the-badge)
+<p align="center">
+<img src="https://shields.io/badge/spring%20boot-2.2.2.RELEASE-lightgreen?logo=springboot&style=for-the-badge" alt="SpringBoot">
+<img src="https://shields.io/badge/spring%20cloud-Hoxton.SR1-lightgreen?logo=spring&style=for-the-badge" alt="SpringCloud">
+</p>
 
-![MySQL](https://shields.io/badge/mysql-8.0.20-lightblue?logo=mysql&style=for-the-badge)
-
-![Spring Boot](https://shields.io/badge/spring%20boot-2.2.2.RELEASE-lightgreen?logo=spring&style=for-the-badge)
-
-![Spring Cloud](https://shields.io/badge/spring%20cloud-Hoxton.SR1-lightgreen?logo=spring&style=for-the-badge)
-
-![Spring Cloud Alibaba](https://shields.io/badge/spring%20cloud%20alibaba-2.1.0.RELEASE-orange?logo=alibaba%20cloud&style=for-the-badge)
-
+<p align="center">
+<img src="https://shields.io/badge/spring%20cloud%20alibaba-2.1.0.RELEASE-orange?logo=alibaba%20cloud&style=for-the-badge" alt="SpringCloud-Alibaba">
+</p>
 
 
 ## 💬 微服务序言

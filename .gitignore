@@ -1,6 +1,8 @@
 ### Java
 
 /target/
+*.class
+*.log
 
 
 ### STS
